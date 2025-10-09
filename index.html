@@ -25,3 +25,35 @@ return (m-count);
 
 //hi
  -->
+
+
+ <!-- class Solution {
+  public:
+    Node* removeAllDuplicates(struct Node* head) {
+        // code here
+        if(head==NULL) return NULL;
+        
+    unordered_map<int ,int>mp;
+    Node *temp=head;
+    while(temp!=NULL){
+        mp[temp->data]++;
+        temp=temp->next;
+    }
+    
+    Node* dummy=new Node(0);
+    Node* tail=dummy;
+    temp=head;
+    
+    
+    while(temp){
+        if(mp[temp->data]==1){
+            tail->next=new Node(temp->data);
+            tail=tail->next;
+            
+        }
+        temp=temp->next;
+    }
+    return dummy->next;
+    
+    }
+}; -->
