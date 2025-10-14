@@ -276,3 +276,25 @@ return maxElement;
 };
 
 -->
+
+217. Contains Duplicate
+
+<!--
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        map<int,int>freq;
+        for(int i:nums){
+            freq[i]++;
+        }
+for(auto &x:freq){
+    if(x.second>1){
+return true;
+    }
+
+}
+return false;
+    }
+};
+
+-->
