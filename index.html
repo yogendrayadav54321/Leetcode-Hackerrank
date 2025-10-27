@@ -298,3 +298,22 @@ return false;
 };
 
 -->
+
+Birthday Cake Candles
+<!--
+ int birthdayCakeCandles(vector<int> candles) {
+sort(candles.begin(),candles.end());
+int n=candles.size();
+int max=candles[n-1];
+int count =0;
+for(int i=0;i<n;i++){
+    if(candles[i]==max){
+        count++;
+    }
+}
+return count;
+
+}
+
+
+-->
