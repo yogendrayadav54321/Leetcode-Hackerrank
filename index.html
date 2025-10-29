@@ -335,3 +335,28 @@ for(int i=0;i<n;i++){
 }
 
 -->
+
+Reverse Using Stack
+<!---
+
+
+class Solution {
+  public:
+    string reverse(const string& S) {
+        // code here
+        stack<char>st;
+        for(char s:S){
+            st.push(s);
+            
+        }
+        
+        string sx="";
+        while(!st.empty()){
+            sx=sx+st.top();
+            st.pop();
+        }
+        return sx;
+    }
+};
+
+-->
