@@ -402,3 +402,24 @@ int minimumNumber(int n, string password) {
 }
 
 -->
+marsExploration (hackerrank)
+<!---
+
+
+
+int marsExploration(string s) {
+int n=s.length();
+    int m=n/3;
+    int count=0;
+    string sub="SOS";
+    size_t pos = s.find(sub);
+
+    while (pos != string::npos) {
+        count++;
+        pos = s.find(sub, pos + 1); // move ahead by one position
+    }
+    return m-count;
+    
+    
+}
+-->
